@@ -1,4 +1,4 @@
-package com.BulatVI.stepik.functionalProgramming;
+package com.stepik;
 
 public class HelloB {
     public static void main(String[] args) {
