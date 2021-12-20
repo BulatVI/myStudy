@@ -26,3 +26,5 @@ hs_err_pid*
 /.idea/modules.xml
 /.idea/myStudy.iml
 /.idea/vcs.xml
+/.idea/
+/test/
