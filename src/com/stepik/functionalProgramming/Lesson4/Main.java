@@ -39,8 +39,9 @@ final class CommentUtils {
      */
     public static final SimpleDateFormat TEXT_FORMATTER = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
 
-    private CommentUtils() {
-    }
+
+
+    private CommentUtils() { }
 
     /**
      * It processes a given list of comments by removing old comments and shortening the text length
