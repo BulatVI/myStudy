@@ -1,7 +1,6 @@
 package com.stepik.functionalProgramming.Lesson4;
 
 import java.util.*;
-import java.util.function.BiFunction;
 
 /*
 To solve this problem, you need to implement two methods of the PhoneBook class.
