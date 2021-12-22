@@ -43,6 +43,7 @@ class LongRange {
             return (int) i;
         };*/
         return Comparator.comparing(LongRange::getCapacity).thenComparing(LongRange::getLeft);
+        //return Comparator.<LongRange>comparingLong(lr -> lr.right - lr.left).thenComparing(LongRange::getLeft);
         //return Comparator.comparing((LongRange y) -> Math.abs(y.right - y.left)) .thenComparingLong(LongRange::getLeft);
     }
 
