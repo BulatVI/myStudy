@@ -1,7 +1,6 @@
 package com.stepik.functionalProgramming.Lesson4;
 
 import java.util.Objects;
-import java.util.Optional;
 import java.util.function.Consumer;
 import java.util.function.Function;
 
@@ -86,7 +85,7 @@ class Calculator<T extends Number> {
         //if (hasError)  return getBrokenCalculator();
         try {
             U result = mapper.apply(value);
-            return new Calculator<U>(result);
+            return new Calculator<>(result);
         }catch (ArithmeticException | NullPointerException e){
             return getBrokenCalculator();
         }
