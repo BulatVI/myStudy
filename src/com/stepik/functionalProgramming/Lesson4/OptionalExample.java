@@ -6,7 +6,7 @@ import java.util.Optional;
 For the class Rocket, create a getter method that returns Optional<NavigationModule>.
 Please take into account that the navigationModule can be null.
 * */
-public class OptionalsExample {
+public class OptionalExample {
     public static void main(String[] args) {
         Optional<String> title = null;      //null
         Optional<Long> number = Optional.empty();       //Optional<Long>.empty
