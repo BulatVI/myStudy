@@ -13,14 +13,14 @@ an appropriate comparator.
  */
 public class SortingMain {
     public static void main(String[] args) {
-        List<Account> accounts = new ArrayList<>();
-        accounts.add(new Account("Peter", 1000L, false));
-        accounts.add(new Account("John", 1000L, false));
-        accounts.add(new Account("Ivan", 8000L, true));
-        accounts.add(new Account("Helen", 5000L, false));
-        accounts.add(new Account("Nicole", 3000L, true));
+        List<Account1> accounts = new ArrayList<>();
+        accounts.add(new Account1("Peter", 1000L, false));
+        accounts.add(new Account1("John", 1000L, false));
+        accounts.add(new Account1("Ivan", 8000L, true));
+        accounts.add(new Account1("Helen", 5000L, false));
+        accounts.add(new Account1("Nicole", 3000L, true));
 
-        accounts.sort(Account.getComparatorByLockedBalanceAndOwner());
+        accounts.sort(Account1.getComparatorByLockedBalanceAndOwner());
         accounts.forEach(System.out::println);
         /*
         Helen 5000 false
@@ -32,22 +32,22 @@ public class SortingMain {
     }
 }
 
-class Account {
+class Account1 {
     private final String owner;
     private final long balance;
     private final boolean locked;
 
-    Account(String owner, long balance, boolean locked) {
+    Account1(String owner, long balance, boolean locked) {
         this.owner = owner;
         this.balance = balance;
         this.locked = locked;
     }
 
-    public static Comparator<Account> getComparatorByLockedBalanceAndOwner() {
+    public static Comparator<Account1> getComparatorByLockedBalanceAndOwner() {
         // write your code here
-        return  Comparator.comparing(Account::isLocked )
-                .thenComparing(Account::getBalance, Comparator.reverseOrder())
-                .thenComparing(Account::getOwner);
+        return  Comparator.comparing(Account1::isLocked )
+                .thenComparing(Account1::getBalance, Comparator.reverseOrder())
+                .thenComparing(Account1::getOwner);
     }
 
     public String getOwner() {
