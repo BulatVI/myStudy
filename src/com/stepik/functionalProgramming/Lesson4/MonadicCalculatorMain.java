@@ -97,17 +97,15 @@ class Calculator<T extends Number> {
      */
     public Calculator<T> consume(Consumer<T> consumer) {
         // write your code here
-        try {
+        /*try {
             if (value != null) {
                 consumer.accept(value);
             }
             return new Calculator<T>(value); //this тоже можно
         }catch (Exception e){
             return getBrokenCalculator();
-        }
-        /*
+        }*/
         if (!this.hasError) consumer.accept(this.value);
         return this;
-        */
     }
 }
