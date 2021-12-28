@@ -1,7 +1,6 @@
-package com.stepik.functionalProgramming.Lesson5;
+package com.stepik.functionalProgramming.Lesson5.Tasks2;
 
 import java.util.*;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 class OnlineJobSystem {

@@ -1,4 +1,4 @@
-package com.stepik.functionalProgramming.Lesson5;
+package com.stepik.functionalProgramming.Lesson5.Tasks1;
 
 import java.time.LocalDate;
 import java.util.Comparator;

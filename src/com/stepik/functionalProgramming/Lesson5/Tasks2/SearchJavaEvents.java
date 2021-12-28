@@ -1,9 +1,7 @@
-package com.stepik.functionalProgramming.Lesson5;
+package com.stepik.functionalProgramming.Lesson5.Tasks2;
 
 import java.util.List;
 import java.util.Scanner;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  * Here you need to implement the printSortedJavaEvents method that takes a list of event titles and must print only

@@ -1,4 +1,4 @@
-package com.stepik.functionalProgramming.Lesson5;
+package com.stepik.functionalProgramming.Lesson5.Tasks1;
 
 import java.util.Arrays;
 import java.util.List;
