@@ -1,9 +1,11 @@
 package com.stepik.functionalProgramming.Lesson5.Tasks3;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /*
 Imagine, you are developing software to check health. It gathers the pulse rate of a patient multiple times a day
